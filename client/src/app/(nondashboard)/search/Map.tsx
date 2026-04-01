@@ -20,11 +20,26 @@ const Map = () => {
   useEffect(() => {
     if (isLoading || isError || !properties) return;
 
+    const coordinates = filters.coordinates;
+    const hasCoordinates =
+      coordinates &&
+      Array.isArray(coordinates) &&
+      coordinates.length === 2 &&
+      coordinates[0] !== null &&
+      coordinates[1] !== null &&
+      Math.abs(coordinates[0]) <= 180 &&
+      Math.abs(coordinates[1]) <= 90;
+
+    const center: [number, number] = hasCoordinates
+      ? (coordinates as [number, number])
+      : [-95.7, 37.1]; // continental US center
+    const zoom = hasCoordinates ? 9 : 5;
+
     const map = new mapboxgl.Map({
       container: mapContainerRef.current!,
-      style: "mapbox://styles/majesticglue/cm6u301pq008b01sl7yk1cnvb",
-      center: filters.coordinates || [-74.5, 40],
-      zoom: 9,
+      style: "mapbox://styles/mapbox/streets-v12",
+      center,
+      zoom,
     });
 
     properties.forEach((property) => {
@@ -78,8 +93,8 @@ const createPropertyMarker = (property: Property, map: mapboxgl.Map) => {
             </p>
           </div>
         </div>
-        `
-      )
+        `,
+      ),
     )
     .addTo(map);
   return marker;
