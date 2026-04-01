@@ -73,7 +73,7 @@ const Navbar = () => {
                 router.push(
                   authUser.userRole?.toLowerCase() === "manager"
                     ? "/managers/newproperty"
-                    : "/search"
+                    : "/search",
                 )
               }
             >
@@ -130,7 +130,7 @@ const Navbar = () => {
                         authUser.userRole?.toLowerCase() === "manager"
                           ? "/managers/properties"
                           : "/tenants/favorites",
-                        { scroll: false }
+                        { scroll: false },
                       )
                     }
                   >
@@ -142,7 +142,7 @@ const Navbar = () => {
                     onClick={() =>
                       router.push(
                         `/${authUser.userRole?.toLowerCase()}s/settings`,
-                        { scroll: false }
+                        { scroll: false },
                       )
                     }
                   >
