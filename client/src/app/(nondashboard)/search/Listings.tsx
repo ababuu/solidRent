@@ -17,7 +17,7 @@ const Listings = () => {
     authUser?.cognitoInfo?.userId || "",
     {
       skip: !authUser?.cognitoInfo?.userId,
-    }
+    },
   );
   const [addFavorite] = useAddFavoritePropertyMutation();
   const [removeFavorite] = useRemoveFavoritePropertyMutation();
@@ -34,7 +34,7 @@ const Listings = () => {
     if (!authUser) return;
 
     const isFavorite = tenant?.favorites?.some(
-      (fav: Property) => fav.id === propertyId
+      (fav: Property) => fav.id === propertyId,
     );
 
     if (isFavorite) {
@@ -58,7 +58,9 @@ const Listings = () => {
       <h3 className="text-sm px-4 font-bold">
         {properties.length}{" "}
         <span className="text-gray-700 font-normal">
-          Places in {filters.location}
+          {filters.location
+            ? `Places in ${filters.location}`
+            : "Places available"}
         </span>
       </h3>
       <div className="flex">
@@ -70,7 +72,7 @@ const Listings = () => {
                 property={property}
                 isFavorite={
                   tenant?.favorites?.some(
-                    (fav: Property) => fav.id === property.id
+                    (fav: Property) => fav.id === property.id,
                   ) || false
                 }
                 onFavoriteToggle={() => handleFavoriteToggle(property.id)}
@@ -83,14 +85,14 @@ const Listings = () => {
                 property={property}
                 isFavorite={
                   tenant?.favorites?.some(
-                    (fav: Property) => fav.id === property.id
+                    (fav: Property) => fav.id === property.id,
                   ) || false
                 }
                 onFavoriteToggle={() => handleFavoriteToggle(property.id)}
                 showFavoriteButton={!!authUser}
                 propertyLink={`/search/${property.id}`}
               />
-            )
+            ),
           )}
         </div>
       </div>
