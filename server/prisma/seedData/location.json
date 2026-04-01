@@ -88,5 +88,437 @@
     "address": "789 Rodeo Dr",
     "postalCode": "90210",
     "coordinates": "POINT(-118.400356 34.073620)"
+  },
+  {
+    "id": 11,
+    "country": "United States",
+    "city": "Brooklyn",
+    "state": "NY",
+    "address": "252 Atlantic Ave",
+    "postalCode": "11201",
+    "coordinates": "POINT(-73.990573 40.686436)"
+  },
+  {
+    "id": 12,
+    "country": "United States",
+    "city": "Queens",
+    "state": "NY",
+    "address": "148-09 Jamaica Ave",
+    "postalCode": "11435",
+    "coordinates": "POINT(-73.781098 40.700593)"
+  },
+  {
+    "id": 13,
+    "country": "United States",
+    "city": "Bronx",
+    "state": "NY",
+    "address": "560 Grand Concourse",
+    "postalCode": "10451",
+    "coordinates": "POINT(-73.926350 40.825310)"
+  },
+  {
+    "id": 14,
+    "country": "United States",
+    "city": "Yonkers",
+    "state": "NY",
+    "address": "87 Main St",
+    "postalCode": "10701",
+    "coordinates": "POINT(-73.898727 40.931210)"
+  },
+  {
+    "id": 15,
+    "country": "United States",
+    "city": "Buffalo",
+    "state": "NY",
+    "address": "45 Main St",
+    "postalCode": "14202",
+    "coordinates": "POINT(-78.878738 42.880230)"
+  },
+  {
+    "id": 16,
+    "country": "United States",
+    "city": "Albany",
+    "state": "NY",
+    "address": "112 State St",
+    "postalCode": "12207",
+    "coordinates": "POINT(-73.756233 42.652580)"
+  },
+  {
+    "id": 17,
+    "country": "United States",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "234 Orange Ave",
+    "postalCode": "32801",
+    "coordinates": "POINT(-81.379236 28.538335)"
+  },
+  {
+    "id": 18,
+    "country": "United States",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "567 Bay Shore Blvd",
+    "postalCode": "33611",
+    "coordinates": "POINT(-82.458444 27.950575)"
+  },
+  {
+    "id": 19,
+    "country": "United States",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "890 Riverside Ave",
+    "postalCode": "32204",
+    "coordinates": "POINT(-81.655651 30.332184)"
+  },
+  {
+    "id": 20,
+    "country": "United States",
+    "city": "Fort Lauderdale",
+    "state": "FL",
+    "address": "321 Las Olas Blvd",
+    "postalCode": "33301",
+    "coordinates": "POINT(-80.143372 26.122440)"
+  },
+  {
+    "id": 21,
+    "country": "United States",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "address": "444 Central Ave",
+    "postalCode": "33701",
+    "coordinates": "POINT(-82.640518 27.773056)"
+  },
+  {
+    "id": 22,
+    "country": "United States",
+    "city": "Boca Raton",
+    "state": "FL",
+    "address": "700 Glades Rd",
+    "postalCode": "33431",
+    "coordinates": "POINT(-80.104975 26.368306)"
+  },
+  {
+    "id": 23,
+    "country": "United States",
+    "city": "Houston",
+    "state": "TX",
+    "address": "1001 Main St",
+    "postalCode": "77002",
+    "coordinates": "POINT(-95.369803 29.760427)"
+  },
+  {
+    "id": 24,
+    "country": "United States",
+    "city": "Dallas",
+    "state": "TX",
+    "address": "2500 Elm St",
+    "postalCode": "75226",
+    "coordinates": "POINT(-96.796988 32.776665)"
+  },
+  {
+    "id": 25,
+    "country": "United States",
+    "city": "Austin",
+    "state": "TX",
+    "address": "301 Congress Ave",
+    "postalCode": "78701",
+    "coordinates": "POINT(-97.743061 30.267153)"
+  },
+  {
+    "id": 26,
+    "country": "United States",
+    "city": "San Antonio",
+    "state": "TX",
+    "address": "456 Commerce St",
+    "postalCode": "78205",
+    "coordinates": "POINT(-98.493629 29.424122)"
+  },
+  {
+    "id": 27,
+    "country": "United States",
+    "city": "Fort Worth",
+    "state": "TX",
+    "address": "789 West 7th St",
+    "postalCode": "76102",
+    "coordinates": "POINT(-97.320167 32.725409)"
+  },
+  {
+    "id": 28,
+    "country": "United States",
+    "city": "El Paso",
+    "state": "TX",
+    "address": "123 Mesa Hills Dr",
+    "postalCode": "79912",
+    "coordinates": "POINT(-106.485022 31.761878)"
+  },
+  {
+    "id": 29,
+    "country": "United States",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "500 N Michigan Ave",
+    "postalCode": "60611",
+    "coordinates": "POINT(-87.629798 41.878114)"
+  },
+  {
+    "id": 30,
+    "country": "United States",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "1 Magnificent Mile",
+    "postalCode": "60611",
+    "coordinates": "POINT(-87.623177 41.895966)"
+  },
+  {
+    "id": 31,
+    "country": "United States",
+    "city": "Naperville",
+    "state": "IL",
+    "address": "77 South Main St",
+    "postalCode": "60540",
+    "coordinates": "POINT(-88.147537 41.785977)"
+  },
+  {
+    "id": 32,
+    "country": "United States",
+    "city": "Evanston",
+    "state": "IL",
+    "address": "1800 Sherman Ave",
+    "postalCode": "60201",
+    "coordinates": "POINT(-87.687697 42.045072)"
+  },
+  {
+    "id": 33,
+    "country": "United States",
+    "city": "Springfield",
+    "state": "IL",
+    "address": "222 Capitol Ave",
+    "postalCode": "62701",
+    "coordinates": "POINT(-89.639749 39.781721)"
+  },
+  {
+    "id": 34,
+    "country": "United States",
+    "city": "Rockford",
+    "state": "IL",
+    "address": "401 N Main St",
+    "postalCode": "61101",
+    "coordinates": "POINT(-89.093966 42.271389)"
+  },
+  {
+    "id": 35,
+    "country": "United States",
+    "city": "Seattle",
+    "state": "WA",
+    "address": "612 First Ave",
+    "postalCode": "98104",
+    "coordinates": "POINT(-122.332071 47.606209)"
+  },
+  {
+    "id": 36,
+    "country": "United States",
+    "city": "Spokane",
+    "state": "WA",
+    "address": "808 W Riverside Ave",
+    "postalCode": "99201",
+    "coordinates": "POINT(-117.426048 47.658779)"
+  },
+  {
+    "id": 37,
+    "country": "United States",
+    "city": "Tacoma",
+    "state": "WA",
+    "address": "935 Pacific Ave",
+    "postalCode": "98402",
+    "coordinates": "POINT(-122.440069 47.252877)"
+  },
+  {
+    "id": 38,
+    "country": "United States",
+    "city": "Bellevue",
+    "state": "WA",
+    "address": "400 108th Ave NE",
+    "postalCode": "98004",
+    "coordinates": "POINT(-122.200676 47.610378)"
+  },
+  {
+    "id": 39,
+    "country": "United States",
+    "city": "Kirkland",
+    "state": "WA",
+    "address": "600 Market St",
+    "postalCode": "98033",
+    "coordinates": "POINT(-122.209764 47.681088)"
+  },
+  {
+    "id": 40,
+    "country": "United States",
+    "city": "Olympia",
+    "state": "WA",
+    "address": "120 N Capitol Way",
+    "postalCode": "98501",
+    "coordinates": "POINT(-122.900695 47.037872)"
+  },
+  {
+    "id": 41,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "1600 Glenarm Place",
+    "postalCode": "80202",
+    "coordinates": "POINT(-104.990251 39.739236)"
+  },
+  {
+    "id": 42,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "3450 W 32nd Ave",
+    "postalCode": "80211",
+    "coordinates": "POINT(-105.016357 39.760231)"
+  },
+  {
+    "id": 43,
+    "country": "United States",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "address": "117 S Tejon St",
+    "postalCode": "80903",
+    "coordinates": "POINT(-104.821363 38.833882)"
+  },
+  {
+    "id": 44,
+    "country": "United States",
+    "city": "Aurora",
+    "state": "CO",
+    "address": "1585 S Havana St",
+    "postalCode": "80012",
+    "coordinates": "POINT(-104.831917 39.729432)"
+  },
+  {
+    "id": 45,
+    "country": "United States",
+    "city": "Boulder",
+    "state": "CO",
+    "address": "1135 Pearl St",
+    "postalCode": "80302",
+    "coordinates": "POINT(-105.270546 40.014986)"
+  },
+  {
+    "id": 46,
+    "country": "United States",
+    "city": "Fort Collins",
+    "state": "CO",
+    "address": "210 E Olive St",
+    "postalCode": "80524",
+    "coordinates": "POINT(-105.084423 40.585260)"
+  },
+  {
+    "id": 47,
+    "country": "United States",
+    "city": "Atlanta",
+    "state": "GA",
+    "address": "100 Peachtree St NE",
+    "postalCode": "30303",
+    "coordinates": "POINT(-84.387982 33.748997)"
+  },
+  {
+    "id": 48,
+    "country": "United States",
+    "city": "Atlanta",
+    "state": "GA",
+    "address": "3330 Piedmont Rd NE",
+    "postalCode": "30305",
+    "coordinates": "POINT(-84.362225 33.842396)"
+  },
+  {
+    "id": 49,
+    "country": "United States",
+    "city": "Savannah",
+    "state": "GA",
+    "address": "300 Factor's Walk",
+    "postalCode": "31401",
+    "coordinates": "POINT(-81.099834 32.083541)"
+  },
+  {
+    "id": 50,
+    "country": "United States",
+    "city": "Augusta",
+    "state": "GA",
+    "address": "540 Broad St",
+    "postalCode": "30901",
+    "coordinates": "POINT(-81.974898 33.474000)"
+  },
+  {
+    "id": 51,
+    "country": "United States",
+    "city": "Macon",
+    "state": "GA",
+    "address": "412 Cherry St",
+    "postalCode": "31201",
+    "coordinates": "POINT(-83.632402 32.840695)"
+  },
+  {
+    "id": 52,
+    "country": "United States",
+    "city": "Athens",
+    "state": "GA",
+    "address": "165 E Clayton St",
+    "postalCode": "30601",
+    "coordinates": "POINT(-83.357567 33.960948)"
+  },
+  {
+    "id": 53,
+    "country": "United States",
+    "city": "Phoenix",
+    "state": "AZ",
+    "address": "1 N Central Ave",
+    "postalCode": "85004",
+    "coordinates": "POINT(-112.074036 33.448376)"
+  },
+  {
+    "id": 54,
+    "country": "United States",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "address": "7301 E Shoeman Ln",
+    "postalCode": "85251",
+    "coordinates": "POINT(-111.921039 33.494170)"
+  },
+  {
+    "id": 55,
+    "country": "United States",
+    "city": "Tucson",
+    "state": "AZ",
+    "address": "198 W Alameda St",
+    "postalCode": "85701",
+    "coordinates": "POINT(-110.926479 32.221743)"
+  },
+  {
+    "id": 56,
+    "country": "United States",
+    "city": "Tempe",
+    "state": "AZ",
+    "address": "51 W 3rd St",
+    "postalCode": "85281",
+    "coordinates": "POINT(-111.940005 33.425510)"
+  },
+  {
+    "id": 57,
+    "country": "United States",
+    "city": "Mesa",
+    "state": "AZ",
+    "address": "20 E Main St",
+    "postalCode": "85201",
+    "coordinates": "POINT(-111.831472 33.415184)"
+  },
+  {
+    "id": 58,
+    "country": "United States",
+    "city": "Chandler",
+    "state": "AZ",
+    "address": "55 N Arizona Ave",
+    "postalCode": "85225",
+    "coordinates": "POINT(-111.841248 33.306160)"
   }
 ]
