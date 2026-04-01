@@ -17,22 +17,27 @@ const PropertyLocation = ({ propertyId }: PropertyDetailsProps) => {
   useEffect(() => {
     if (isLoading || isError || !property) return;
 
+    const lng = property.location.coordinates.longitude;
+    const lat = property.location.coordinates.latitude;
+    const isValidCoord =
+      typeof lng === "number" &&
+      typeof lat === "number" &&
+      Math.abs(lng) <= 180 &&
+      Math.abs(lat) <= 90 &&
+      !(lng === 0 && lat === 0);
+
+    const center: [number, number] = isValidCoord
+      ? [lng, lat]
+      : [-118.25, 34.05];
+
     const map = new mapboxgl.Map({
       container: mapContainerRef.current!,
-      style: "mapbox://styles/majesticglue/cm6u301pq008b01sl7yk1cnvb",
-      center: [
-        property.location.coordinates.longitude,
-        property.location.coordinates.latitude,
-      ],
+      style: "mapbox://styles/mapbox/streets-v12",
+      center,
       zoom: 14,
     });
 
-    const marker = new mapboxgl.Marker()
-      .setLngLat([
-        property.location.coordinates.longitude,
-        property.location.coordinates.latitude,
-      ])
-      .addTo(map);
+    const marker = new mapboxgl.Marker().setLngLat(center).addTo(map);
 
     const markerElement = marker.getElement();
     const path = markerElement.querySelector("path[fill='#3FB1CE']");
@@ -61,7 +66,7 @@ const PropertyLocation = ({ propertyId }: PropertyDetailsProps) => {
         </div>
         <a
           href={`https://maps.google.com/?q=${encodeURIComponent(
-            property.location?.address || ""
+            property.location?.address || "",
           )}`}
           target="_blank"
           rel="noopener noreferrer"
