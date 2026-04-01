@@ -15,7 +15,7 @@ const SearchPage = () => {
   const searchParams = useSearchParams();
   const dispatch = useAppDispatch();
   const isFiltersFullOpen = useAppSelector(
-    (state) => state.global.isFiltersFullOpen
+    (state) => state.global.isFiltersFullOpen,
   );
 
   useEffect(() => {
@@ -31,10 +31,20 @@ const SearchPage = () => {
 
         return acc;
       },
-      {}
+      {},
     );
 
     const cleanedFilters = cleanParams(initialFilters);
+
+    // Explicitly reset coordinates and location when absent from URL
+    // (cleanParams strips [null, null] arrays, so we add them back after)
+    if (!searchParams.has("coordinates")) {
+      cleanedFilters.coordinates = [null, null];
+    }
+    if (!searchParams.has("location")) {
+      cleanedFilters.location = "";
+    }
+
     dispatch(setFilters(cleanedFilters));
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
